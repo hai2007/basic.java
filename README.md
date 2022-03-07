@@ -5,11 +5,15 @@
 
 ## How to test?
 
-直接执行下面命令即可：
+打开```eclipse```后，按照下面顺序导入下面：
 
 ```
-mvn test
+[File] -> [Import] -> [Maven] -> [Existing Maven Projects]
 ```
+
+然后选择当前项目即可成功导入。
+
+导入后运行只需要把```TestXXX.java```作为入口，选择```run as Application```即可。
 
 ## How to publish?
 
