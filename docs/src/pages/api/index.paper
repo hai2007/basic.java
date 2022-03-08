@@ -1,0 +1,48 @@
+<template class='nav-view'>
+    <div class="menu">
+        <ul :active='pagename=="io.gitee.hai2007.collection.JSON"?"yes":"no"'>
+            <li>
+                <h3 @click='openPage("io.gitee.hai2007.collection.JSON","top","no")'>io.gitee.hai2007.collection.JSON</h3>
+            </li>
+        </ul>
+    </div>
+    <div id='root-view' class='view'>
+        <div>
+            <component :is='page'></component>
+        </div>
+    </div>
+</template>
+<script>
+    import fixedScroll from '../../Service/fixedScroll.js';
+
+    let pages = {
+        "io.gitee.hai2007.collection.JSON": () => import('./io.gitee.hai2007.collection.JSON.paper')
+    };
+
+    export default {
+        data() {
+            return {
+                page: null,
+                pagename: ""
+            };
+        },
+        mounted() {
+            let urlJson = this.urlFormat(window.location.href);
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.collection.JSON", urlJson.params.fixed || "top");
+        },
+        methods: {
+            openPage(pagename, fixedName, flag) {
+                pages[pagename]().then(data => {
+                    this.page = data.default;
+                    this.pagename = pagename;
+                    if (flag == 'no') window.location.href = "#/api/" + pagename + "?fixed=" + fixedName;
+                    fixedScroll(fixedName);
+                });
+            },
+            doScroll(fixedName) {
+                window.location.href = "#/api/" + this.pagename + "?fixed=" + fixedName;
+                fixedScroll(fixedName);
+            }
+        }
+    };
+</script>
