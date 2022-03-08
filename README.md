@@ -1,5 +1,5 @@
 <p align='center'>
-    <a href='https://io.github.hai2007/basic.java' target='_blank'>
+    <a href='https://hai2007.github.io/basic.java/' target='_blank'>
         <img src='./logo.png'>
     </a>
 </p>
