@@ -1,0 +1,23 @@
+<template class='doc-view'>
+    <header id='fixed-top'>
+        io.gitee.hai2007.file.Sql
+    </header>
+    <p>
+        基于本地文件实现的类似Sql的一个操作对象。
+    </p>
+    <h2 id="fixed-constructor">
+        构造器
+    </h2>
+    <h3 id="fixed-constructor-Sql">
+        Sql(String pathname)
+    </h3>
+    <pre q-code>
+Sql sql = new Sql('./database');
+    </pre>
+    <p>
+        这个方法会基于文件夹“database”创建一个数据库上下文，目标文件夹可以是空文件夹或者前序自动创建的。
+    </p>
+    <h2 id="fixed-method">
+        对象方法
+    </h2>
+</template>

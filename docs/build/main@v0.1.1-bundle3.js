@@ -1,6 +1,6 @@
 
 /*************************** [bundle] ****************************/
-// Original file:./src/pages/api/io.gitee.hai2007.collection.JSON.paper
+// Original file:./src/pages/api/io.gitee.hai2007.file.Sql.paper
 /*****************************************************************/
 window.__etcpack__bundleSrc__['34']=function(){
     var __etcpack__scope_bundle__={};
@@ -18,7 +18,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('37');
 
     script.render=function(createElement){
 
-        return createElement('div',{"class":"doc-view","quickpaper":"","data-quickpaper-4eb730bd":""},[createElement('header',{"id":"fixed-top","data-quickpaper-4eb730bd":""},["io.gitee.hai2007.collection.JSON"])])
+        return createElement('div',{"class":"doc-view","quickpaper":"","data-quickpaper-087062d3":""},[createElement('header',{"id":"fixed-top","data-quickpaper-087062d3":""},["io.gitee.hai2007.file.Sql"]),createElement('p',{"data-quickpaper-087062d3":""},["基于本地文件实现的类似Sql的一个操作对象。"]),createElement('h2',{"id":"fixed-constructor","data-quickpaper-087062d3":""},["构造器"]),createElement('h3',{"id":"fixed-constructor-Sql","data-quickpaper-087062d3":""},["Sql(String pathname)"]),createElement('pre',{"q-code":"","data-quickpaper-087062d3":""},["Sql sql = new Sql('./database');"]),createElement('p',{"data-quickpaper-087062d3":""},["这个方法会基于文件夹“database”创建一个数据库上下文，目标文件夹可以是空文件夹或者前序自动创建的。"]),createElement('h2',{"id":"fixed-method","data-quickpaper-087062d3":""},["对象方法"])])
 
     };
 
@@ -29,7 +29,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('37');
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/pages/api/io.gitee.hai2007.collection.JSON.paper?QuickPaper&type=script&lang=js&hash=4eb730bd
+// Original file:./src/pages/api/io.gitee.hai2007.file.Sql.paper?QuickPaper&type=script&lang=js&hash=087062d3
 /*****************************************************************/
 window.__etcpack__bundleSrc__['36']=function(){
     var __etcpack__scope_bundle__={};
@@ -40,7 +40,7 @@ window.__etcpack__bundleSrc__['36']=function(){
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./src/pages/api/io.gitee.hai2007.collection.JSON.paper?QuickPaper&type=style&lang=css&hash=4eb730bd
+// Original file:./src/pages/api/io.gitee.hai2007.file.Sql.paper?QuickPaper&type=style&lang=css&hash=087062d3
 /*****************************************************************/
 window.__etcpack__bundleSrc__['37']=function(){
     var __etcpack__scope_bundle__={};

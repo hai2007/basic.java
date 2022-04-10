@@ -1059,8 +1059,8 @@ var uiSearch =__etcpack__scope_args__.default;
 
 
     let pages = {
-        begin: () => window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle1.js','23'),
-        api: () => window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle2.js','24')
+        begin: () => window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle1.js','23'),
+        api: () => window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle2.js','24')
     };
 
     __etcpack__scope_bundle__.default= {

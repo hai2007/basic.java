@@ -18,7 +18,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('35');
 
     script.render=function(createElement){
 
-        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[createElement('ul',{":active":"pagename==\"io.gitee.hai2007.collection.JSON\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"io.gitee.hai2007.collection.JSON\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["io.gitee.hai2007.collection.JSON"])])])]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
+        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[createElement('ul',{":active":"pagename==\"io.gitee.hai2007.file.Sql\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"io.gitee.hai2007.file.Sql\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["io.gitee.hai2007.file.Sql"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll('constructor')","data-quickpaper-aa5c6c28":""},["构造器"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h5',{"@click":"doScroll('constructor-Sql')","data-quickpaper-aa5c6c28":""},["Sql(String pathname)"])])])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll('method')","data-quickpaper-aa5c6c28":""},["对象方法"])])])])])]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
 
     };
 
@@ -39,7 +39,7 @@ var fixedScroll =__etcpack__scope_args__.default;
 
 
     let pages = {
-        "io.gitee.hai2007.collection.JSON": () => window.__etcpack__getLazyBundle('./build/main@v0.1.0-bundle3.js','34')
+        "io.gitee.hai2007.file.Sql": () => window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle3.js','34')
     };
 
     __etcpack__scope_bundle__.default= {
@@ -51,7 +51,7 @@ var fixedScroll =__etcpack__scope_args__.default;
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.collection.JSON", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.file.Sql", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {
