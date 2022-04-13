@@ -1,29 +1,6 @@
 <template class='nav-view'>
     <div class="menu">
-        <ul :active='pagename=="io.gitee.hai2007.file.Sql"?"yes":"no"'>
-            <li>
-                <h3 @click='openPage("io.gitee.hai2007.file.Sql","top","no")'>io.gitee.hai2007.file.Sql</h3>
-                <ul>
-                    <li>
-                        <h4 @click="doScroll('constructor')">
-                            构造器
-                        </h4>
-                        <ul>
-                            <li>
-                                <h5 @click="doScroll('constructor-Sql')">
-                                    Sql(String pathname)
-                                </h5>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 @click="doScroll('method')">
-                            对象方法
-                        </h4>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+
     </div>
     <div id='root-view' class='view'>
         <div>
@@ -35,7 +12,7 @@
     import fixedScroll from '../../Service/fixedScroll.js';
 
     let pages = {
-        "io.gitee.hai2007.file.Sql": () => import('./io.gitee.hai2007.file.Sql.paper')
+
     };
 
     export default {
@@ -47,7 +24,7 @@
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.file.Sql", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "---默认值---", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {
