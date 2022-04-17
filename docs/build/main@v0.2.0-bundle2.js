@@ -13,12 +13,12 @@ var script =__etcpack__scope_args__.default;
 
 
     // 导入css
-__etcpack__scope_args__=window.__etcpack__getBundle('34');
+__etcpack__scope_args__=window.__etcpack__getBundle('35');
 
 
     script.render=function(createElement){
 
-        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
+        return createElement('div',{"class":"nav-view","quickpaper":"","data-quickpaper-aa5c6c28":""},[createElement('div',{"class":"menu","data-quickpaper-aa5c6c28":""},[createElement('ul',{":active":"pagename==\"io.gitee.hai2007.math.Hermite\"?\"yes\":\"no\"","data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h3',{"@click":"openPage(\"io.gitee.hai2007.math.Hermite\",\"top\",\"no\")","data-quickpaper-aa5c6c28":""},["io.gitee.hai2007.math.Hermite"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"constructor\")","data-quickpaper-aa5c6c28":""},["构造器"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h5',{"@click":"doScroll(\"constructor-1\")","data-quickpaper-aa5c6c28":""},["Hermite()"])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h5',{"@click":"doScroll(\"constructor-2\")","data-quickpaper-aa5c6c28":""},["Hermite(float u)"])])])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h4',{"@click":"doScroll(\"object-method\")","data-quickpaper-aa5c6c28":""},["对象方法"]),createElement('ul',{"data-quickpaper-aa5c6c28":""},[createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h5',{"@click":"doScroll(\"object-method-1\")","data-quickpaper-aa5c6c28":""},["setP"])]),createElement('li',{"data-quickpaper-aa5c6c28":""},[createElement('h5',{"@click":"doScroll(\"object-method-2\")","data-quickpaper-aa5c6c28":""},["valueOf"])])])])])])])]),createElement('div',{"id":"root-view","class":"view","data-quickpaper-aa5c6c28":""},[createElement('div',{"data-quickpaper-aa5c6c28":""},[createElement('component',{":is":"page","data-quickpaper-aa5c6c28":""},[])])])])
 
     };
 
@@ -39,7 +39,7 @@ var fixedScroll =__etcpack__scope_args__.default;
 
 
     let pages = {
-
+        "io.gitee.hai2007.math.Hermite":()=>window.__etcpack__getLazyBundle('./build/main@v0.2.0-bundle3.js','34')
     };
 
     __etcpack__scope_bundle__.default= {
@@ -51,7 +51,7 @@ var fixedScroll =__etcpack__scope_args__.default;
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "---默认值---", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.math.Hermite", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {
@@ -238,7 +238,7 @@ __etcpack__scope_bundle__.default= function (doback, duration, callback) {
 /*************************** [bundle] ****************************/
 // Original file:./src/pages/api/index.paper?QuickPaper&type=style&lang=css&hash=aa5c6c28
 /*****************************************************************/
-window.__etcpack__bundleSrc__['34']=function(){
+window.__etcpack__bundleSrc__['35']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');

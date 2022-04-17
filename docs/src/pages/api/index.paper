@@ -1,6 +1,48 @@
 <template class='nav-view'>
     <div class="menu">
-
+        <ul :active='pagename=="io.gitee.hai2007.math.Hermite"?"yes":"no"'>
+            <li>
+                <h3 @click='openPage("io.gitee.hai2007.math.Hermite","top","no")'>
+                    io.gitee.hai2007.math.Hermite
+                </h3>
+                <ul>
+                    <li>
+                        <h4 @click='doScroll("constructor")'>
+                            构造器
+                        </h4>
+                        <ul>
+                            <li>
+                                <h5 @click='doScroll("constructor-1")'>
+                                    Hermite()
+                                </h5>
+                            </li>
+                            <li>
+                                <h5 @click='doScroll("constructor-2")'>
+                                    Hermite(float u)
+                                </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4 @click='doScroll("object-method")'>
+                            对象方法
+                        </h4>
+                        <ul>
+                            <li>
+                                <h5 @click='doScroll("object-method-1")'>
+                                    setP
+                                </h5>
+                            </li>
+                            <li>
+                                <h5 @click='doScroll("object-method-2")'>
+                                    valueOf
+                                </h5>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div id='root-view' class='view'>
         <div>
@@ -12,7 +54,7 @@
     import fixedScroll from '../../Service/fixedScroll.js';
 
     let pages = {
-
+        "io.gitee.hai2007.math.Hermite":()=>import('./io.gitee.hai2007.math.Hermite.paper')
     };
 
     export default {
@@ -24,7 +66,7 @@
         },
         mounted() {
             let urlJson = this.urlFormat(window.location.href);
-            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "---默认值---", urlJson.params.fixed || "top");
+            this.openPage(urlJson.router[1] in pages ? urlJson.router[1] : "io.gitee.hai2007.math.Hermite", urlJson.params.fixed || "top");
         },
         methods: {
             openPage(pagename, fixedName, flag) {

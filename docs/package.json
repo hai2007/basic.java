@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "basic.java文档",
   "scripts": {
     "dev": "etcpack_dev --config etcpack.dev.js",
